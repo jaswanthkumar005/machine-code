@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,*::before,*::after{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin:0;
+        }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border:solid 1px red;
+            background-color: red;
+            /* background-image: url("contact-info.jpg");
+            background-size: cover;
+            background-position: center;*/
+            position: relative; 
+        }
+        .avatar::after,.avatar::before{
+       --scale:0;
+       --arrow-size:10px;
+        position: absolute;
+        top:-.25rem;
+        
+        left: 50%;
+        transform: translateX(-50%) translateY(var(--translate-y,0)) scale(var(--scale));
+        opacity: 0;
+        transition: 500ms transform, 500ms opacity;
+        transform-origin: bottom center;
+       
+        }
+        .avatar::before{
+            --translate-y:-110%;
+           
+            background: #333;
+            width: max-content;
+            max-width: 100%;
+            color:white;
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+            text-align: center;
+            content: attr(data-tooltip);
+           
+        }
+        .avatar:hover::before,
+        .avatar:hover::after{
+           --scale:1;
+           opacity: 1;
+        }
+        .avatar::after{
+            --translate-y:-7px;
+            content: '';
+            border:var(--arrow-size) solid transparent;
+            border-top-color: #333;
+            transform-origin: top center;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="avatar" data-tooltip="tetsing image">
+
+    </div>
+</body>
+</html>

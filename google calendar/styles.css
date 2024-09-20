@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.calendar-wrapper {
+    display: flex;
+}
+
+.time-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.time-label {
+    height: 60px; /* 60px representing 1 hour */
+    line-height: 18px; /* Align text in the middle of the hour */
+    box-sizing: border-box;
+    padding-right: 5px;
+    color: #666;
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    width: 300px;
+    position: relative;
+    height: 1440px; /* Representing 24 hours in minutes */
+}
+
+.time-slot {
+    height: 60px; /* 60px representing 1 hour */
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.time-slot:last-child {
+    border-bottom: none;
+}
+
+.event {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 2px;
+}
+
+.arrow {
+    position: absolute;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid;
+    top: 5px;
+}

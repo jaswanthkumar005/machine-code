@@ -1,0 +1,98 @@
+{
+    "status":"OK",
+    "data":{
+        "q":"trees",
+        "total_count":5,
+        "start":0,
+        
+        "items":[
+            {
+                "name":"Trees",
+                "type":"dataverse",
+                "url":"https://demo.dataverse.org/dataverse/trees",
+                "image_url":"https://demo.dataverse.org/api/access/dvCardImage/7",
+                "identifier":"trees",
+                "description":"A tree dataverse with some birds",
+                "published_at":"2016-05-10T12:53:38Z"
+            },
+            {
+                "name":"Chestnut Trees",
+                "type":"dataverse",
+                "url":"https://demo.dataverse.org/dataverse/chestnuttrees",
+                "image_url":"https://demo.dataverse.org/api/access/dvCardImage/9",
+                "identifier":"chestnuttrees",
+                "description":"A dataverse with chestnut trees and an oriole",
+                "published_at":"2016-05-10T12:52:38Z"
+            },
+            {
+                "name":"trees.png",
+                "type":"file",
+                "url":"https://demo.dataverse.org/api/access/datafile/12",
+                "image_url":"https://demo.dataverse.org/api/access/fileCardImage/12",
+                "file_id":"12",
+                "description":"",
+                "published_at":"2016-05-10T12:53:39Z",
+                "file_type":"PNG Image",
+                "file_content_type":"image/png",
+                "size_in_bytes":8361,
+                "md5":"0386269a5acb2c57b4eade587ff4db64",
+                "file_persistent_id": "doi:10.5072/FK2/XTT5BV/PCCHV7",
+                "dataset_name": "Dataset One",
+                "dataset_id": "32",
+                "dataset_persistent_id": "doi:10.5072/FK2/XTT5BV",
+                "dataset_citation":"Spruce, Sabrina, 2016, \"Spruce Goose\", http://dx.doi.org/10.5072/FK2/XTT5BV, Root Dataverse, V1"
+            },
+            {
+                "name":"Birds",
+                "type":"dataverse",
+                "url":"https://demo.dataverse.org/dataverse/birds",
+                "image_url":"https://demo.dataverse.org/api/access/dvCardImage/2",
+                "identifier":"birds",
+                "description":"A bird Dataverse collection with some trees",
+                "published_at":"2016-05-10T12:57:27Z"
+            },
+            {
+                "name":"Darwin's Finches",
+                "type":"dataset",
+                "url":"https://doi.org/10.70122/FK2/MB5VGR",
+                "global_id":"doi:10.70122/FK2/MB5VGR",
+                "description":"Darwin's finches (also known as the GalÃ¡pagos finches) are a group of about fifteen species of passerine birds.",
+                "published_at":"2019-12-11T15:26:10Z",
+                "publisher":"dvbe69f5e1",
+                "citationHtml":"Finch, Fiona; Spruce, Sabrina; Poe, Edgar Allen; Mulligan, Hercules, 2019, \"Darwin's Finches\", <a href=\"https://doi.org/10.70122/FK2/MB5VGR\" target=\"_blank\">https://doi.org/10.70122/FK2/MB5VGR</a>, Root, V3",
+                "identifier_of_dataverse":"dvbe69f5e1",
+                "name_of_dataverse":"dvbe69f5e1",
+                "citation":"Finch, Fiona; Spruce, Sabrina; Poe, Edgar Allen; Mulligan, Hercules, 2019, \"Darwin's Finches\", https://doi.org/10.70122/FK2/MB5VGR, Root, V3",
+                "storageIdentifier":"file://10.70122/FK2/MB5VGR",
+                "subjects":[
+                   "Astronomy and Astrophysics",
+                   "Other"
+                ],
+                "fileCount":3,
+                "versionId":1260,
+                "versionState":"RELEASED",
+                "majorVersion":3,
+                "minorVersion":0,
+                "createdAt":"2019-09-20T18:08:29Z",
+                "updatedAt":"2019-12-11T15:26:10Z",
+                "contacts":[
+                   {
+                      "name":"Finch, Fiona",
+                      "affiliation":""
+                   }
+                ],
+                "producers":[
+                   "Allen, Irwin",
+                   "Spielberg, Stephen"
+                ],
+                "authors":[
+                   "Finch, Fiona",
+                   "Spruce, Sabrina",
+                   "Poe, Edgar Allen",
+                   "Mulligan, Hercules"
+                ]
+             }
+        ],
+        "count_in_response":5
+    }
+}

@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#file-viewer {
+    max-width: 600px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    cursor: default; /* Default cursor for files */
+}
+
+.folder {
+    cursor: pointer; /* Pointer cursor for folders */
+}
+
+.folder::before {
+    content: "📁";
+    margin-right: 5px;
+}
+
+.file::before {
+    content: "📄";
+    margin-right: 5px;
+}
+
+.folder.collapsed > ul {
+    display: none;
+}

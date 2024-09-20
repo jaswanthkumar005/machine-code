@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment Box</title>
+  <style>
+    .comment-box {
+      width: 600px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .comment {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+    .reply {
+      margin-left: 20px;
+      border-left: 2px solid #ddd;
+      padding-left: 10px;
+    }
+    .comment-actions {
+      margin-top: 10px;
+    }
+    .reply-form {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="comment-box">
+  <textarea id="comment-text" placeholder="Write a comment..."></textarea>
+  <button id="submit-comment">Submit Comment</button>
+  <div id="comments-container"></div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
